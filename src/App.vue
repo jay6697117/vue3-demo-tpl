@@ -1,25 +1,26 @@
 <template>
-  <div ref="p">hello p</div>
-  <div ref="q">hello q</div>
+  <p>todoId: {{ todoId }}</p>
+  <button @click="todoIdAdd">todoId add</button>
+  <p v-if="!todoData">Loading...</p>
+  <pre v-else>{{ todoData }}</pre>
 </template>
 
 <script setup lang="ts">
 import { nanoid } from 'nanoid';
-import { ref, onMounted } from 'vue';
-const p = ref(null);
-const q = ref(null);
-console.dir(p.value);
-console.dir(q.value);
-onMounted(() => {
-  console.dir(p.value);
-  console.dir(q.value);
-  console.log('p.value.textContent:', p.value.textContent);
-  console.log('q.value.textContent:', q.value.textContent);
-  p.value.textContent = 'hello p 111';
-  p.value.style.backgroundColor = '#ccc';
-  q.value.textContent = 'hello q 222';
-  q.value.style.backgroundColor = 'skyblue';
-});
+import { ref } from 'vue';
+let todoId = ref(1);
+const todoData = ref(null);
+
+function todoIdAdd(): void {
+  todoId.value = Math.floor(Math.random()*10+1);
+  fetchData();
+}
+async function fetchData(): Promise<void> {
+  todoData.value = null;
+  const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${todoId.value}`);
+  todoData.value = await res.json();
+}
+fetchData();
 </script>
 
 <style scoped></style>
