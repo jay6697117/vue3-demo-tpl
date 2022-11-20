@@ -1,7 +1,4 @@
 <script setup lang="ts">
-// defineProps<{
-//   msg: string;
-// }>();
 const props = defineProps({
   msg: {
     type: String,
@@ -9,8 +6,10 @@ const props = defineProps({
     default: 'default string'
   }
 });
+const emitFn = defineEmits(['response']);
 console.log('props 0:', props);
 console.log('props.msg 1:', props.msg);
+emitFn('response','response msg hahaha');
 </script>
 
 <template>
