@@ -1,5 +1,6 @@
 <template>
   <HelloWorld :msg="msg" />
+  <div>111: {{msg}}</div>
 </template>
 
 <script setup lang="ts">
