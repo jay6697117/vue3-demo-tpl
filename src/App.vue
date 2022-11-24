@@ -1,17 +1,37 @@
 <template>
-  <!-- <HelloWorld :msg="msg" @response="handleResponse" /> -->
-  <HelloWorld :msg="msg" @response="val => (msg = val)" />
+  <h1>🎉 Congratulations!</h1>
+  <div class="btn-wrap">
+    <button @click="showConfetti">喝彩</button>
+  </div>
 </template>
 
 <script setup lang="ts">
 import { nanoid } from 'nanoid';
+import JSConfetti from 'js-confetti';
 import { ref } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
-const msg = ref('Hello from parent' + ' - ' + nanoid());
-// function handleResponse(val) {
-//   console.log('handleResponse val :', val);
-//   msg.value = val;
-// }
+const confetti = new JSConfetti();
+
+function showConfetti() {
+  confetti.addConfetti();
+}
+
+showConfetti();
 </script>
 
-<style scoped></style>
+<style scoped>
+h1 {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 3em;
+}
+
+.btn-wrap{
+  width: 100%;
+  text-align: center;
+}
+
+button {
+  margin-top: 100px;
+  padding: 2px 20px;
+}
+</style>
