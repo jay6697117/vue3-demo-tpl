@@ -1,4 +1,5 @@
 <template>
+  <!-- 处理用户输入 -->
   <h1>{{ msg }}</h1>
   <button @click="reverseString">颠倒字符串</button>
   <button @click="appendSign">尾后添加!</button>
