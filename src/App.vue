@@ -1,17 +1,3 @@
-<script setup lang="ts">
-import { ref, reactive } from 'vue';
-import { RouterLink, RouterView } from 'vue-router';
-
-const currentStr = ref('home');
-const styleObject = reactive({
-  color: 'red',
-  backgroundColor: '#ccc'
-});
-function handleClick(val: string) {
-  currentStr.value = val;
-}
-</script>
-
 <template>
   <div class="nav">
     <img alt="Vue logo" class="logo" src="@/assets/images/logo.svg" />
@@ -32,9 +18,22 @@ function handleClick(val: string) {
       >
     </div>
   </div>
-
   <RouterView />
 </template>
+
+<script setup lang="ts">
+import { ref, reactive } from 'vue';
+import { RouterLink, RouterView } from 'vue-router';
+
+const currentStr = ref('home');
+const styleObject = reactive({
+  color: 'red',
+  backgroundColor: '#ccc'
+});
+function handleClick(val: string) {
+  currentStr.value = val;
+}
+</script>
 
 <style scoped>
 .nav {

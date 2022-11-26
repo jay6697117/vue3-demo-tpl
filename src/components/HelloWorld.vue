@@ -13,7 +13,7 @@ const props = defineProps({
   }
 });
 const emitFn = defineEmits(['response']);
-// console.log('props 0:', props);
+console.log('props 0:', props);
 // console.log('props.msg 1:', props.msg);
 emitFn('response', 'response msg hahaha');
 </script>
