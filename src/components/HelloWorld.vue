@@ -22,7 +22,6 @@ emitFn('response', 'response msg hahaha');
 h3 {
   font-size: 1.2rem;
 }
-
 .greetings {
   background-color: #ccc;
   border-radius: 40px;
@@ -31,19 +30,16 @@ h3 {
   justify-content: center;
   align-items: center;
 }
-
 .greetings h1,
 .greetings h3 {
   text-align: center;
 }
-
 .greetings .green {
   font-weight: 500;
   font-size: 32px;
   padding: 10px 40px;
   border-radius: 20px;
 }
-
 @media (min-width: 1024px) {
   .greetings h1,
   .greetings h3 {
