@@ -1,22 +1,22 @@
+<template>
+  <div class="greetings">
+    <h1 class="green">{{ msg }}</h1>
+  </div>
+</template>
+
 <script setup lang="ts">
 const props = defineProps({
   msg: {
     type: String,
-    required: true,
+    required: false,
     default: 'default string'
   }
 });
 const emitFn = defineEmits(['response']);
 console.log('props 0:', props);
 console.log('props.msg 1:', props.msg);
-emitFn('response','response msg hahaha');
+emitFn('response', 'response msg hahaha');
 </script>
-
-<template>
-  <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
-  </div>
-</template>
 
 <style scoped>
 h3 {
@@ -26,6 +26,10 @@ h3 {
 .greetings {
   background-color: #ccc;
   border-radius: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .greetings h1,
