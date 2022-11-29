@@ -3,7 +3,8 @@
 // import UserInput from '@/components/UserInput.vue';
 // import AttributeBind from '@/components/AttributeBind.vue'
 // import IfFor from '@/components/IfFor.vue';
-import FormBind from '@/components/FormBind.vue';
+// import FormBind from '@/components/FormBind.vue';
+import SimpleComp from '@/components/SimpleComp.vue';
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import FormBind from '@/components/FormBind.vue';
   <!-- <UserInput /> -->
   <!-- <AttributeBind /> -->
   <!-- <IfFor /> -->
-  <FormBind />
+  <!-- <FormBind /> -->
+  <SimpleComp />
 </template>
