@@ -4,7 +4,8 @@
 // import AttributeBind from '@/components/AttributeBind.vue'
 // import IfFor from '@/components/IfFor.vue';
 // import FormBind from '@/components/FormBind.vue';
-import SimpleComp from '@/components/SimpleComp.vue';
+// import SimpleComp from '@/components/SimpleComp.vue';
+import MarkDown from '@/components/MarkDown.vue';
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import SimpleComp from '@/components/SimpleComp.vue';
   <!-- <AttributeBind /> -->
   <!-- <IfFor /> -->
   <!-- <FormBind /> -->
-  <SimpleComp />
+  <!-- <SimpleComp /> -->
+  <MarkDown />
 </template>

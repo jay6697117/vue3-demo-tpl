@@ -11,6 +11,8 @@ specifiers:
   eslint: ^8.22.0
   eslint-plugin-vue: ^9.3.0
   js-confetti: ^0.11.0
+  lodash-es: ^4.17.21
+  marked: ^4.2.3
   nanoid: ^4.0.0
   npm-run-all: ^4.1.5
   pinia: ^2.0.21
@@ -25,6 +27,8 @@ specifiers:
 
 dependencies:
   js-confetti: 0.11.0
+  lodash-es: 4.17.21
+  marked: 4.2.3
   nanoid: 4.0.0
   pinia: 2.0.23_lrjaoqkmph6q2hmgd3qeuy6rom
   vue: 3.2.41
@@ -1955,6 +1959,10 @@ packages:
       p-locate: 5.0.0
     dev: true
 
+  /lodash-es/4.17.21:
+    resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
+    dev: false
+
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
     dev: true
@@ -1974,6 +1982,12 @@ packages:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
       sourcemap-codec: 1.4.8
+
+  /marked/4.2.3:
+    resolution: {integrity: sha512-slWRdJkbTZ+PjkyJnE30Uid64eHwbwa1Q25INCAYfZlK4o6ylagBy/Le9eWntqJFoFT93ikUKMv47GZ4gTwHkw==}
+    engines: {node: '>= 12'}
+    hasBin: true
+    dev: false
 
   /memorystream/0.3.1:
     resolution: {integrity: sha512-S3UwM3yj5mtUSEfP41UZmt/0SCoVYUcU1rkXv+BQ5Ig8ndL4sPoJNBUJERafdPb5jjHJGuMgytgKvKIf58XNBw==}
