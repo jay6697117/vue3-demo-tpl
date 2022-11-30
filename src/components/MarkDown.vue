@@ -1,6 +1,6 @@
 <template>
   <div class="editor">
-    <textarea class="input" :value="input" @input="update"></textarea>
+    <textarea class="input" :value="input" @input="handleInput"></textarea>
     <div class="output" v-html="output"></div>
   </div>
 </template>
@@ -14,7 +14,7 @@ const input = ref('# hello');
 const output = computed(() => {
   return marked(input.value);
 });
-const update = debounce((e: { target: { value: string } }) => {
+const handleInput = debounce((e: { target: { value: string } }) => {
   input.value = e.target.value;
   console.log('input.value 1:', input.value);
   console.log('marked(input.value) 2:', marked(input.value));
