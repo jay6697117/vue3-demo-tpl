@@ -5,7 +5,8 @@
 // import IfFor from '@/components/IfFor.vue';
 // import FormBind from '@/components/FormBind.vue';
 // import SimpleComp from '@/components/SimpleComp.vue';
-import MarkDown from '@/components/MarkDown.vue';
+// import MarkDown from '@/components/MarkDown.vue';
+import FetchData from '@/components/FetchData.vue';
 </script>
 
 <template>
@@ -15,5 +16,6 @@ import MarkDown from '@/components/MarkDown.vue';
   <!-- <IfFor /> -->
   <!-- <FormBind /> -->
   <!-- <SimpleComp /> -->
-  <MarkDown />
+  <!-- <MarkDown /> -->
+  <FetchData />
 </template>
